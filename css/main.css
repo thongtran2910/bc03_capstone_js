@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  background-color: rgba(153, 138, 138, 0.1);
+  background-size: 200%;
+  background-position: right;
+  min-height: 100vh;
+}
+.cart {
+  border: solid 1px;
+  border-radius: 10%;
+  color: rgb(67, 194, 152);
+  transition: all 0.4s;
+}
+.cart:hover {
+  border: solid 1px;
+  color: rgb(22, 147, 106);
+}
+.product-item {
+  position: relative;
+  transition: all 0.5s;
+  border: 1px solid rgba(67, 194, 152, 0.5);
+}
+.product-item:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.6);
+}
+.btn-addtocart {
+  text-transform: uppercase;
+  padding: 0 10px;
+  position: absolute;
+  content: "";
+  display: block;
+  top: -4%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(31, 75, 60);
+  background-color: rgb(67, 194, 152);
+  border: 1px solid rgb(67, 194, 152);
+  transition: all 0.3s;
+}
+.btn-addtocart:hover {
+  background-color: rgb(38, 132, 129);
+  color: white;
+  border: 1px solid rgb(67, 194, 152);
+}
+.btn-addtocart:active {
+  background-color: rgb(38, 132, 129);
+}
+.fa {
+  cursor: pointer;
+}
+.detail {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.product-item:hover .detail {
+  opacity: 1;
+}
